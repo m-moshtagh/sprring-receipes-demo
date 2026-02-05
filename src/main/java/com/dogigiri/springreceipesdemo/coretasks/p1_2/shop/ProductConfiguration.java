@@ -1,0 +1,19 @@
+package com.dogigiri.springreceipesdemo.coretasks.p1_2.shop;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.math.BigDecimal;
+
+@Configuration
+public class ProductConfiguration {
+    @Bean
+    public Product aaa() {
+        return new Battery("AAA", BigDecimal.valueOf(2.5), true);
+    }
+
+    @Bean
+    public Product cd() {
+        return new Disk("CD-RW", BigDecimal.valueOf(1.5), 700);
+    }
+}
